@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Comanda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="proiect.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="title"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW lab\Proiect II\proiect.html">BRUTARIA FLORALIS</a></div>
+    <div class="menu">
+      <ul> 
+        <li class="acasa"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW lab\Proiect II\proiect.html">ACASA</a>
+          <ul class="dropdown">
+            <li><a href="file:///C:/Users/tiast/OneDrive/college/1/1_2/TW%20lab/Proiect%20II/proiect.html#valori">VALORILE NOASTRE</a></li>
+            <li><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW lab\Proiect II\proiect.html#tehnica">TEHNICA</a></li>
+            <li><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW lab\Proiect II\proiect.html#echipa">ECHIPA</a></li>
+        </ul>
+        </li>
+        <li><a href="#">PRODUSELE NOASTRE</a></li>
+        <li><a href="#">GALERIE</a>
+        <li class="comanda"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW lab\Proiect II\comanda.html">COMANDA</a>
+          <ul class="dropdown">
+            <li><a href="#">LIVRARE</a></li>
+            <li><a href="#">RIDICARE DIN MAGAZIN</a></li>
+        </ul>
+        </li>
+        <li class="contact"><a href="#">CONTACT</a>
+          <ul class="dropdown">
+            <li><a href="#">LOCATII</a></li>
+            <li><a href="#">DATE CONTACT</a></li>
+          </ul>
+        </li>
+        <li class="despre"><a href="#">DESPRE NOI</a>
+          <ul class="dropdown">
+              <li><a href="#">POVESTEA NOASTRA</a></li>
+              <li><a href="#">CINE SUNTEM?</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CURSURI</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="main">
+        <form action="#" name="comanda" onSubmit="return(validate());">
+          <div>
+            <h1>Adresa</h1>
+            <div>Nume: <br><input type="text" id="nume" placeholder="Nume Prenume"></div>
+            <div>Adresa e-mail: <br><input type="text" id="email" placeholder="nume@exemplu.ro"></div>
+            <div>Adresa: <br><input type="text" id="adresa" placeholder="Adresa"></div>
+            <div>Oras: <br><input type="text" id="oras" placeholder="Oras"></div>
+            <div>Judet:<br><input type="text" id="judet" placeholder="Judet/Sector"></div>
+            <div>Cod postal:<br><input type="text" id="cp" placeholder="123456"></div>
+          </div>
+          <div>
+          <h1>Metoda Plata</h1>
+            Plata Numerar
+            <input type="radio" id="cash" name="plata" checked = "checked" onclick=Cash()> <br>
+            Plata Card
+            <input type="radio" id="card" name="plata" onclick=Card()>
+          </div>
+          <div id="pcard" style="display:none">
+            <h1>Plata cu card</h1>
+            <input type="text" id="cnume" name="cardname" placeholder="John More Doe">
+            <input type="text" id="cnum" name="cardnumber" placeholder="1111-222-333">
+            Luna expirare:
+            <select name="luna" id="luna">
+              <option value="0">Luna</option>
+              <option value="1">Ianuarie</option>
+              <option value="2">Februarie</option>
+              <option value="3">Martie</option>
+              <option value="4">Aprilie</option>
+              <option value="5">Mai</option>
+              <option value="6">Iunie</option>
+              <option value="7">Iulie</option>
+              <option value="8">August</option>
+              <option value="9">Septembrie</option>
+              <option value="10">Octombrie</option>
+              <option value="11">Noiembrie</option>
+              <option value="12">Decembrie</option>
+            </select>
+            An expirare:
+            <select name="an" id="an">
+              <option value="0">202X</option>
+              <option value="1">2021</option>
+              <option value="2">2022</option>
+              <option value="3">2023</option>
+              <option value="4">2024</option>
+            </select>
+            CVV:<input type="password" id="cvv" name="cvv" placeholder="123">
+          </div>
+    <div>Adresa de facturare este aceeasi ca adresa de livrare<input type="checkbox" checked="checked" name="sameadr" onclick=Address()></div>
+    <div id="address" style="display:none">
+    <div>Nume: <br><input type="text" id="snume" placeholder="Nume Prenume"></div>
+    <div>Adresa e-mail: <br><input type="text" id="semail" placeholder="john@example.com"></div>
+    <div>Adresa: <br><input type="text" id="sadresa" placeholder="Adresa"></div>
+    <div>Oras: <br><input type="text" id="soras" placeholder="Oras"></div>
+    <div>Judet:<br><input type="text" id="sjudet" placeholder="Judet"></div>
+    <div>Cod postal:<br><input type="text" id="scp" placeholder="123456"></div>
+  </div>
+  <input type="submit" class="buton" value="Confirma comanda"  onclick=multumim()>
+  </form>  
+  <div id="mp">VA MAI ASTEPTAM!</div>
+  </div> 
+</div>
+</body>
+</html>

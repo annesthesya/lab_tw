@@ -1,0 +1,309 @@
+.title{
+    grid-area:title;
+    margin-top: 15px;
+    padding-top:7%;
+    border: 3px solid white;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Aldrich';
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-color:#205873;
+  }
+  .menu {
+    grid-area: menu; 
+    font-size: large;
+    line-height: 150%;
+    font-weight: bold;
+    font-family: 'Aldrich';
+    border: 3px solid white;
+    background-color: #5174AD;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  }
+  .main { 
+    grid-area: main; 
+    height: auto;
+    text-align: center;
+    background-color: #7fad92;
+  }
+  .footer { 
+    grid-area: footer; 
+    border: 3px solid white;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Aldrich';
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-color: #205873;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto auto;
+    grid-template-areas:
+    'title'
+    'menu'
+    'main'
+    'footer';
+    grid-gap: 10px;
+    line-height: 130%;
+    font-family: 'Itim', cursive;
+    background-color: #0e1d1d;
+    background-image: url("https://www.transparenttextures.com/patterns/swirl.png");
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    border-bottom: 3px solid white;
+    padding:20px;
+    text-align: center;
+    font-size: larger;
+  }
+  li:last-child{
+    border-bottom: none;
+  }
+  li a:hover {
+    display: block;
+    background-color: rgb(9, 44, 53);
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    color: #5174AD;
+  }
+  li a:active{
+    color:rgb(199, 222, 135);
+  }
+  
+  .dropdown {
+    display: none;
+    align-self: center;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    right:0px;
+    border: 3px solid white;
+    color: rgb(9, 44, 53);
+    font-size: large;
+    background-color: #5174AD;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  }
+  
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -15px;
+    visibility: hidden;
+  }
+  
+  .acasa:hover .dropdown{
+    display:block;
+  }
+  .despre:hover .dropdown{
+    display:block;
+  }
+  .comanda:hover .dropdown{
+    display:block;
+  }
+  .contact:hover .dropdown{
+    display:block;
+  }
+  
+  body{
+    background-color: #0e1d1d;
+    background-image: url("https://www.transparenttextures.com/patterns/swirl.png");
+  }
+  
+  img{
+    float:right;
+    margin: 10px;
+    width:50%;
+    height:50%;
+    max-width: 75%;
+    max-height: 75%;
+    border: 3px solid white;
+  }
+
+.form{
+  font-family: 'Aldrich';
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(67, 124, 115, 0.6);
+    z-index: 1001;
+}
+#continut {
+  font-family: 'Aldrich';
+  padding: 30px;
+  max-width: 50%;
+  /* height: 375px; */
+  background-color: #7fad92;
+  border: 3px solid white;
+  /* border-radius: 25px; */
+  box-shadow: #265158d8 0px 0px 3px 3px;
+  position: relative;
+  top: 165px;
+  left: 20%;
+}
+
+input[type=text] {
+  text-align: center;
+  width: 100%;
+  color: rgb(17, 31, 114);
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #0e1d1d7e;
+  border: 1px solid white;
+}
+
+.buton {
+  color: rgb(9, 44, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  font-size: large;
+  font-family: Aldrich;
+  background-color: #5174AD;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.buton:hover {
+  background-color: rgb(9, 44, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  color: #5174AD;
+}
+  
+  h1{
+    display: block;
+    border: 3px solid white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Aldrich';
+    font-size: larger;
+    color: rgb(17, 31, 114);
+    background-color:#2b916a;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  }
+
+  .multumim{
+    display: block;
+    border: 3px solid white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Aldrich';
+    font-size: larger;
+    color: rgb(17, 31, 114);
+    background-color:#2b916a;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  }
+  
+  a:link {
+    display: block;
+    color: rgb(9, 44, 53);
+    text-align: center;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(17, 31, 114);
+  }
+  a:active {
+    color:rgb(199, 222, 135);
+  }
+  
+  @media only screen and (min-width: 300px){
+    title{
+      padding-top:15px;
+      font-size: 30px;
+    }
+  }
+  
+  @media only screen and (min-width: 600px){
+    .title{
+      padding-top:4%;
+    }
+    .grid-container{
+      font-size: 22px;
+      line-height: 35px;
+    }
+  }
+  
+  @media only screen and (min-width: 900px){
+    .title{
+      padding:25px;
+    }
+    .grid-container{
+      grid-template-columns: 10% 80% 10%;
+      grid-template-rows: 100px auto auto auto;
+      grid-template-areas:
+      '. title .'
+      '. menu .'
+      '. main .'
+      '. footer .';
+      line-height:40px;
+      font-size: 20px;
+    }
+    a.anchor {
+      display: block;
+      visibility: hidden;
+      position: relative;
+      top: -405px;
+    }
+    .menu{
+      top:15px;
+    }
+    .main{
+    padding: 40px;
+    }
+  }
+  
+    @media only screen and (min-width: 1500px){
+    .title{
+      position: sticky;
+      top:15px;
+      padding-top:50px;
+      font-size: 40px;
+    }
+    .menu{
+    position:sticky;
+    top: 160px;
+    }
+    body{
+      background-image: url("https://images.squarespace-cdn.com/content/v1/5372e4d2e4b0fca9449770f9/1552447742565-5N3RUCUFG0ZNOHUTLJ59/ke17ZwdGBToddI8pDm48kOq3XtvT-rTx5PTvQrwH2CZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyBi6H8XuGgiOTkZYjvHnSOANLZGVcHi3tbrkKAT-GPtysHBglV01zzuz87anpmrvo/green-leaves-pattern_diana-toledano.png?format=1000w");
+    }
+    a.anchor {
+      display: block;
+      visibility: hidden;
+      position: relative;
+      top: -180px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 10% 20% 60% 10%;
+      grid-template-rows: 150px auto auto auto;
+      grid-template-areas:
+      '. title title .'
+      '. menu main .'
+      '. . main .'
+      '. footer footer .';
+      grid-gap: 10px;
+      margin-left: 100px;
+      margin-right: 100px;
+      font-family: 'Itim', cursive;
+      line-height: 30px;
+      background-color: #0e1d1d;
+      background-image: url("https://www.transparenttextures.com/patterns/swirl.png");
+      }
+    }
