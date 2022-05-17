@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Proiect II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="proiect.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body onload=PopUpTimeout()>
+<div class="grid-container">
+  <div class="title"><a href="#">BRUTARIA FLORALIS</a></div>
+  <div class="menu">
+    <ul> 
+      <li class="acasa"><a href="#">ACASA</a>
+        <ul class="dropdown">
+          <li><a href="#valori">VALORILE NOASTRE</a></li>
+          <li><a href="#tehnica">TEHNICA</a></li>
+          <li><a href="#echipa">ECHIPA</a></li>
+      </ul>
+      </li>
+      <li><a href="#">PRODUSELE NOASTRE</a></li>
+      <li><a href="#">GALERIE</a>
+      <li class="comanda"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW\TW_lab\Proiect_III\comanda.html">COMANDA</a>
+        <ul class="dropdown">
+          <li><a href="#">LIVRARE</a></li>
+          <li><a href="#">RIDICARE DIN MAGAZIN</a></li>
+      </ul>
+      </li>
+      <li class="contact"><a href="#">CONTACT</a>
+        <ul class="dropdown">
+          <li><a href="#">LOCATII</a></li>
+          <li><a href="#">DATE CONTACT</a></li>
+        </ul>
+      </li>
+      <li class="despre"><a href="#">DESPRE NOI</a>
+        <ul class="dropdown">
+            <li><a href="#">POVESTEA NOASTRA</a></li>
+            <li><a href="#">CINE SUNTEM?</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CURSURI</a></li>
+        </ul>
+       </li>
+    </ul>
+  </div>
+  <div class="main" onclick=anunt(event)>
+    <div id="popup" style='display:none'>
+      <div id="continut">
+        <h1>NEWSLETTER</h1>
+        <div>Nam et malesuada ex. Duis semper tempus eros, quis feugiat mi egestas eget. Cras risus erat, convallis ut commodo a, cursus ac nibh. 
+          Nullam rutrum, dui ac pretium lobortis, tellus tellus faucibus ex, at auctor enim quam sit amet libero. 
+          Ut ac nunc eu felis rutrum volutpat at quis mauris. Nulla facilisi. Aenean ligula nulla, suscipit eget eleifend vel, mollis in nisi. 
+          Vivamus placerat eu lorem a viverra. Donec ultrices elit ac lacus suscipit convallis.</div>
+        <input type="text" id="n_email" name="n_email" placeholder="john@example.com">
+        <input type="submit" name="submit" value="Submit" onClick="PopUp('hide')" />
+      </div>
+    </div>
+    <h1 onclick=anunt(event)>BINE AI VENIT</h1>
+      <p onclick=anunt(event)>
+        Brutăria Floralis este o brutărie de inspirație pariziană, născută din plăcerea gustului bun și delicios. După ani de școală și muncă la Paris, facem prăjituri și patiserie artizanală la București, chiar în inima orașului.        
+      <img onclick=anunt(event) src="https://gucki.it/wp-content/uploads/2018/09/lori-stern-fiori-edibili.jpg" alt="PRODUSELE NOASTRE">
+      Suntem o brutărie care creează bunătăți autentice, frumoase prin imperfecțiunea lor, modelate și coapte de mâna noastră și gustoase până la ultima îmbucătură. Brutăria Floralis este copt din inimă, într-un oraș pe care îl iubim și în care ne simțim acasă.
+      Misiunea noastra este să împărțim cu generozitate gustul bun și delicios al produselor Floralis. Ne place să facem asta nu doar cu prietenii, ci și cu colegii și clienții care ne vizitează zilnic. Suntem ancorați în contemporan și evoluăm constant, în căutarea perfecțiunii gustului. 
+      Pentru noi, brutăria artizanală înseamnă lucrul cu mâinile, atenta selecție a ingredientelor și respectarea rețetelor dezvoltate de-a lungul timpului, cu seriozitate și constantă, cantități mici și prospețime. 
+    </p>
+    <h1><a class="anchor" id="valori"></a>VALORILE NOASTRE</h1>
+    <ul>
+      <li>Autenticitate: avem poftă de bunătățile noastre și credem că și alții se vor bucura de ele.</li>
+      <li>Experiență relaxată și primitoare: o destinație care creează povești și apropie oamenii.</li>
+      <li>Evoluția gusturilor și texturilor: lumea se schimbă și noi contribuim la asta într-un process perpetuu .</li>
+        <li>Loialitate și corectitudine: suntem onești cu noi și cu ceilalți. Produsul e gustos, cinstit și sănătos.</li>
+          <li>Încurajăm inițiativa și învățam din greșeli: ne pasă și avem dorința de a face mai bine.</li>
+    </ul>
+       <h1><a class="anchor" id="tehnica"></a>TEHNICA</h1>
+      <p>
+        Zilele la Brutăria Floralis încep devreme. La 5:30 sosesc brutarii, iar primul lucru pe care îl fac este să pună prăjiturile la copt. Avem cuptoare performante, care pornesc automat la 4 dimineața, astfel că sunt bine încinse când sosesc brutarii. Abia apoi facem cafea pentru personal. Este important să începem cât mai devreme pentru a avea timp să pregătim toate produsele pentru când se deschid magazinele.
+              <img src="https://gucki.it/wp-content/uploads/2018/09/biscotti-lori-stern-fiori.jpg" alt="PRODUSELE NOASTRE">
+              Dimineața, totul este precizie și cadența. Toate gesturile și procesele trebuie făcute într-un anumit ritm, e foarte puțin loc de improvizație. Sigur, se intamplă și neîntâmplate, dar încercăm să le gestionăm cât putem de bine. Una dintre ele se intamplă când brutarul nu se trezește, atunci în mod clar tot programul este dat peste cap. De aceea avem 2 brutari care încep în același timp, astfel încât dacă i se intamplă unuia dintre ei, celălalt se poate ocupa de copt singur pană când ajunge și somnorosul.
+              La 7 sosește personalul care pregăteste magazinele pentru deschidere - aranjează produsele la raft și face cafeaua pentru ceilalți membri ai echipei. Este important și frumos momentul acela de cafea de dimineată, dar are loc întotdeauna după ce treaba este facută. Asta e prioritatea noastră, a tuturor – să fim pregătiti dimineața. Odată ce magazinele sunt aprovizionate, ritmul se schimbă. 
+              <img src="https://gucki.it/wp-content/uploads/2018/09/cucinare-con-fiori-biscotti-2.jpg" alt="PRODUSELE NOASTRE">
+              Facem o mică ședintă de producție, stabilim planul pentru ziua în curs, facem o listă cu mis-en-place-ul necesar, impărtim sarcinile, râdem, glumim și trecem la treabă! Coacem pe tot parcursul zilei, dar dimineața este cel mai intens pentru că sunt multe produse și avem nevoie de concentrare maximă.
+              Este o atmosferă frumoasă, plină de adrenalină și concentrare. Începem să pălăvrăgim târziu.
+            În jurul prânzului avem iarăși câteva ore de adrenalină, căci vin mai mulți clienți, astfel că în funcție de ce este nevoie, începem să coacem din nou. Acum este momentul în care trebuie să anticipăm ce anume ne mai trebuie pentru după-amiază, ca la închidere să nu mai avem multe produse rămase, dar totuși să fie suficiente pentru cei care sosesc târziu. În mod clar, spre seară, rafturile încep să se golească. Acest lucru ne permite să nu avem pierderi și să ne păstrăm angajamentul de a vinde doar produse proaspete.
+            A doua zi o luăm de la capăt, inclusiv sâmbăta și duminica.
+    </p>
+      <h1><a class="anchor" id="echipa"></a>ECHIPA</h1>
+      <p>
+        Fondatorii Brutăriei Floralis, Tom Rees si Irina Stancescu, au venit in Bucuresti de la Paris, unde au lucrat in domeniul gastronomiei la nivel inalt. Tom provine dintr-o familie cu tradiție în domeniul restaurantelor, astfel că, de când era mic, a avut contact cu gastronomia, ajungând să lucreze ca patiser la restaurantul parizian Pierre Gagnaire, un restaurant cu 3 stele Michelin. Mai apoi și-a urmărit pasiunea pentru boulangerie alaturându-se echipei lui Cyrill Lignac ca Chef Boulanger. Irina a absolvit cursurile de cuisine și patisserie Cordon Bleu de la Paris (Grand Diplome), a lucrat ca bucătar la Pierre Gagnaire, unde l-a cunoscut pe Tom, iar apoi într-una dintre cele mai cochete patiserii din Paris, Pain de Sucre.
+        Tom e îndrăgostit de pâine, de când se știe, asa a învățat să facă pâine bună. Irinei îi place să facă deserturi și să gătească. Amândurora le place sa manance.
+        <img src="https://media.remodelista.com/wp-content/uploads/2018/05/botanic-bakery-kristel-van-valkenhoef-pansy-viola-rose-cookies-7-1024x1024.jpg" alt="PRODUSELE NOASTRE">  
+        De la deschidere, in 2013, Brutăria Floralis a crescut si s-a dezvoltat continuu, avand acum o echipa de peste 50 de persoane. Nucleul dur al echipei, cum spunem noi, este format din primii angajati, care au investit timp, energie si emotie in dezvoltarea produselor si a proceselor care dau viata magazinelor in fiecare zi, fie ca vorbim despre partea de productie, de vanzare sau, mai putin vizibila, partea administrativa.
+        Aceasta crestere a echipei si dezvoltare individuala este una dintre cele mai mari satisfactii pe care le resimtim in fiecare zi. Cu adevarat ne place ce facem si ca o facem impreuna.
+      Nu avem secrete de patiserie, dar avem un angajament pentru ingrediente primare de calitate, respectarea reţetelor şi prospeţimea zilnică. Gustul bogat al untului se traduce în aluaturi delicioase şi crocante care satisfac apetitul iubitorilor de patiserie pură.
+    </p>
+  </div>  
+  <div class="footer">
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+      </a>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- <img src="https://gucki.it/wp-content/uploads/2018/09/biscotti-con-fiori-lori-stern.jpg" alt="PRODUSELE NOASTRE"> -->

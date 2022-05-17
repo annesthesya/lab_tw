@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Comanda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="proiect.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="title"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW\TW_lab\Proiect_III\proiect.html">BRUTARIA FLORALIS</a></div>
+    <div class="menu">
+      <ul> 
+        <li class="acasa"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW\TW_lab\Proiect_III\proiect.html">ACASA</a>
+          <ul class="dropdown">
+            <li><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW\TW_lab\Proiect_III\proiect.html#valori">VALORILE NOASTRE</a></li>
+            <li><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW\TW_lab\Proiect_III\proiect.html#tehnica">TEHNICA</a></li>
+            <li><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW\TW_lab\Proiect_III\proiect.html#echipa">ECHIPA</a></li>
+        </ul>
+        </li>
+        <li><a href="#">PRODUSELE NOASTRE</a></li>
+        <li><a href="#">GALERIE</a>
+        <li class="comanda"><a href="C:\Users\tiast\OneDrive\college\1\1_2\TW lab\Proiect II\comanda.html">COMANDA</a>
+          <ul class="dropdown">
+            <li><a href="#">LIVRARE</a></li>
+            <li><a href="#">RIDICARE DIN MAGAZIN</a></li>
+        </ul>
+        </li>
+        <li class="contact"><a href="#">CONTACT</a>
+          <ul class="dropdown">
+            <li><a href="#">LOCATII</a></li>
+            <li><a href="#">DATE CONTACT</a></li>
+          </ul>
+        </li>
+        <li class="despre"><a href="#">DESPRE NOI</a>
+          <ul class="dropdown">
+              <li><a href="#">POVESTEA NOASTRA</a></li>
+              <li><a href="#">CINE SUNTEM?</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CURSURI</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="main">
+        <form action="#" name="comanda" onSubmit="return(validate());">
+          <div>
+            <h1>Adresa</h1>
+            <div>Nume: <br><input type="text" id="nume" placeholder="Nume Prenume"></div>
+            <div>Adresa e-mail: <br><input type="text" id="email" placeholder="nume@exemplu.ro"></div>
+            <div>Adresa: <br><input type="text" id="adresa" placeholder="Adresa"></div>
+            <div>Oras: <br><input type="text" id="oras" placeholder="Oras"></div>
+            <div>Judet:<br><input type="text" id="judet" placeholder="Judet/Sector"></div>
+            <div>Cod postal:<br><input type="text" id="cp" placeholder="123456"></div>
+          </div>
+  <input type="submit" class="buton" value="Confirma comanda">
+  </form>
+  <button class="buton" onclick="getComenzi()">Afisaza comenzile efectuate</button>
+  <input type="text" id="unume" placeholder="Schimba numele persoanei care a efectuat comanda 108568">
+  <button class="buton" onclick="update()">Confirma</button>
+  <button class="buton" onclick="deleteComanda()">Stergeti comanda cu ID 102809</button>
+  <button class="buton" onclick="notFound()">404</button>
+  </div> 
+</div>
+</body>
+</html>
